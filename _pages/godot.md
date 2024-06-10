@@ -11,7 +11,7 @@ layout: post
 
 When you need to know of your game is launched from the editor or directly, you can use a custom feature
 
-![alt text](/dom.dumont.github.io/assets/img/godot_export_custom_feature.png)
+![alt text](/assets/img/godot_export_custom_feature.png)
 
 
 and in your code, test the presence of this feature :
