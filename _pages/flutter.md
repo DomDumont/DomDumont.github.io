@@ -26,3 +26,47 @@ void main() async {
 }
 ```
 
+
+State management
+You have to choose the Right Tool: Whether it's:
+ - Provider
+ - Riverpod
+ - Bloc
+
+
+
+ a call to SetState rebuild the widget.
+
+
+   if you let the package version empty in the pubspec, you will get the latest version
+
+
+
+### factory
+The factory keyword in Flutter (and Dart) is used to define a special type of constructor called a factory constructor. Here's a concise explanation:
+
+Purpose: Factory constructors allow you to control object creation, potentially returning an instance from a cache or a subclass.
+Key features:
+
+Can return an existing instance instead of always creating a new one
+Can return instances of subclasses
+Don't have access to this keyword
+
+
+Basic syntax:
+dartCopyclass MyClass {
+  factory MyClass() {
+    // Custom logic for creating or returning an instance
+  }
+}
+
+Use cases:
+
+Implementing the Singleton pattern
+Caching instances
+Returning different subclass instances based on conditions
+
+
+
+
+Scaffold is typically used as the root widget for each screen in your app, providing a consistent structure across different pages or views.
