@@ -70,3 +70,16 @@ Returning different subclass instances based on conditions
 
 
 Scaffold is typically used as the root widget for each screen in your app, providing a consistent structure across different pages or views.
+
+Map<String, dynamic> seems the way to do JSON.
+dynamic is equivalent to unknown type
+
+.. means "then" 
+
+``` dart
+    ModesModel()..loadConfig()
+```
+call to ModelsModel() constructor and then loadConfig  it's a chain.
+
+
+  
