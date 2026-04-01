@@ -4,7 +4,7 @@ date: 2026-04-01 00:00:00 +0200
 categories: [Meta, Dev]
 tags: [flutter, godot, blog]
 image:
-  path: assets/img/avatar.jpg
+  path: "https://www.gravatar.com/avatar/acdacf51f601cef4f12d96d5a305ac28?s=400"
   alt: DomDumont
 ---
 
