@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my blog"
-date: 2026-04-01 12:00:00 +0200
+date: 2026-04-01 00:00:00 +0200
 categories: [Meta, Dev]
 tags: [flutter, godot, blog]
 image:
