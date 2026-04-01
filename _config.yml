@@ -1,66 +1,77 @@
-# Configurations
-title: My notes
-longtitle: My notes long
-author: DomDom
-email: dom.dumont@gmail.com
-description: >
-  Build Jekyll site with the GitBook style.
+lang: en
+timezone: Europe/Paris
 
-version: 1.0
-gitbook_version: 3.2.3
+title: DomDumont
+tagline: Developer · Game maker · Tinkerer
+description: >-
+  Personal blog and portfolio of DomDumont — dev notes, app releases, and game experiments.
 
 url: "https://domdumont.github.io"
-baseurl: "/"
-rss: RSS
+baseurl: ""
 
-# bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
+github:
+  username: DomDumont
 
-toc:
-  enabled: true
-  h_min: 1
-  h_max: 3
+social:
+  name: DomDumont
+  email: ""
+  links:
+    - https://github.com/DomDumont
 
-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path: assets/gitbook/images/favicon.ico
+# Theme mode: leave empty for auto (follows system preference), or set "light" / "dark"
+theme_mode:
 
-# markdown render engine.
-markdown: kramdown
-kramdown:
-  auto_ids: true
-  input: GFM
-  math_engine: mathjax
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  toc_levels: 1..6
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    guess_lang: true
+# Avatar image path (place your photo at assets/img/avatar.jpg)
+avatar: assets/img/avatar.jpg
 
-syntax_highlighter_style: colorful
+# Site-wide table of contents
+toc: true
 
-markdown_ext: markdown,mkdown,mkdn,mkd,md
+# Comments — configure one provider when ready
+comments:
+  active:
+  # disqus:
+  #   shortname:
+  # utterances:
+  #   repo:
+  #   issue_term:
+  # giscus:
+  #   repo:
+  #   repo_id:
+  #   category:
+  #   category_id:
+  #   mapping:
+  #   input_position:
+  #   lang:
 
-# Permalinks
-permalink: /:categories/:year-:month-:day-:title:output_ext
+# Analytics — add your GA4 measurement ID when ready
+analytics:
+  google:
+    id:
 
-# Disqus comments
-# disqushandler:            sighingnow
+paginate: 10
 
-exclude:
-  - _drafts
-
-collections:
-  pages:
-    output: true
-    permalink: /:collection/:path/
-
-page_width: 800px
-
-destination: ./_site
-incremental: false
-regenerate: true
+theme: jekyll-theme-chirpy
 
 plugins:
   - jekyll-feed
-  - jekyll-readme-index
-  - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - vendor
