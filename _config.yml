@@ -53,6 +53,10 @@ paginate: 10
 
 theme: jekyll-theme-chirpy
 
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 defaults:
   - scope:
